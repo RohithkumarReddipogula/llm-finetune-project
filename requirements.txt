@@ -1,0 +1,27 @@
+# ─────────────────────────────────────────────────────────────
+# LLM Fine-Tuning with QLoRA — Requirements
+# Author: Rohith Kumar Reddipogula
+# Project: github.com/RohithkumarReddipogula/llm-finetune-project
+# ─────────────────────────────────────────────────────────────
+
+# ── Core Fine-Tuning ─────────────────────────────────────────
+# Unsloth — 2x faster QLoRA training, 60% less GPU memory
+unsloth
+
+# HuggingFace ecosystem
+transformers>=4.40.0
+peft>=0.10.0
+trl>=0.8.0
+accelerate>=0.27.0
+datasets>=2.18.0
+
+# ── Quantisation ─────────────────────────────────────────────
+# 4-bit quantisation — essential for QLoRA on consumer GPU
+bitsandbytes>=0.43.0
+
+# ── Model Publishing ─────────────────────────────────────────
+huggingface_hub>=0.22.0
+
+# ── Utilities ────────────────────────────────────────────────
+torch>=2.2.0
+numpy>=1.26.0
